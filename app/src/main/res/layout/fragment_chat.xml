@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:divider="@color/white"
+        android:scrollbars="vertical"
+        android:id="@+id/list_chat"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginRight="2dp"
+        android:layout_marginLeft="2dp"
+        android:background="@color/grey"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/edt_input_chat"
+            android:layout_marginLeft="16dp"
+            android:layout_toLeftOf="@+id/img_send"
+            android:fontFamily="serif"
+            android:textSize="16dp"
+            android:hint="Type Message"
+            android:backgroundTint="@color/grey"
+            android:layout_height="40dp" />
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_send"
+            android:src="@drawable/ic_send"
+            android:layout_height="32dp" />
+    </RelativeLayout>
+</LinearLayout>
